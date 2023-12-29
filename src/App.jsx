@@ -56,6 +56,7 @@ function App() {
   return (
     <>
       <main>
+        
         <Scene />
         <Home />
         <Triggers />

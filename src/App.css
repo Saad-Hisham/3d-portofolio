@@ -1,6 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    padding: 1px;
+    padding: 0.1px;
 }
 
 html,
@@ -192,38 +192,7 @@ section.works-section {
     padding-bottom: 40rem;
 }
 
-@media (max-width:647px) {
 
-    .heading-container {
-        width: 100%;
-        padding-left: 4vw;
-        margin-top: 30rem;
-        padding-right: 16vw;
-        position: absolute;
-        left: 0;
-    }
-
-    h1 {
-        font-size: 1rem;
-        margin-left: 20px;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h2 span,
-    h3 span {
-        display: inline-block;
-        transform: translate(0px, 106px);
-    }
-
-}
 
 .about-trigger {
     min-height: 200vh;
@@ -667,21 +636,7 @@ form button:hover {
     left: 10%;
 }
 
-@media (min-width:800px) {
 
-    .heading-container {
-        width: 50rem;
-    }
-
-}
-
-@media (min-width:1200px) {
-
-    .heading-container {
-        width: 70rem;
-    }
-
-}
 
 * {
     touch-action: manipulation;
@@ -769,12 +724,26 @@ footer img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+@media (min-width:800px) {
 
+    .heading-container {
+        width: 50rem;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .heading-container {
+        width: 70rem;
+    }
+
+}
 @media (max-width:1000px) {
     .text {
         top: 88%;
         right: 19%;
-        font-size: .8rem;
+        font-size: 11px;
 
     }
 
@@ -806,12 +775,45 @@ footer img:hover {
         width: 70vw;
     }
 }
+
+@media (max-width:647px) {
+
+    .heading-container {
+        width: 100%;
+        padding-left: 4vw;
+        margin-top: 30rem;
+        padding-right: 16vw;
+        position: absolute;
+        left: 0;
+    }
+
+    h1 {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    h2,.about h2 {
+        font-size: 2.2rem;
+
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h2 span,
+    h3 span {
+        display: inline-block;
+        transform: translate(0px, 106px);
+    }
+
+}
 .custom-loader {
     width: 88px;
     height: 12px;
     background:
-      radial-gradient(farthest-side,#264b7c 90%,#0000) 25% 0,
-      radial-gradient(farthest-side,#264b7c 90%,#0000) 75% 0;
+      radial-gradient(farthest-side,#87c7fbb9 90%,#0000) 25% 0,
+      radial-gradient(farthest-side,#87c7fbb9 90%,#0000) 75% 0;
     background-size:12px 12px;
     background-repeat: no-repeat;
     position: relative;
@@ -824,7 +826,7 @@ footer img:hover {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background:#264b7c;
+    background:#87c7fbb9;
     inset:0;
     margin:auto;
     animation: d4-1 1s cubic-bezier(0.5,300,0.5,-300) infinite;

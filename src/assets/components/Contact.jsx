@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { adjustLight, changeVideo, contactPos } from './Redux/Redux';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import SendIco from "../images/sendico.png"
 import phoneIco from "../images/phone.png"
 import githubIco from "../images/github.png"
 import linkedInIco from "../images/linkedIn.png"
@@ -170,7 +169,7 @@ const Contact = () => {
               <span className="error">{errors.message}</span>
             </div>
 
-            <button type="submit">Send <img src={SendIco} width="40px" height="40px" alt='send button image' /></button>
+            <button type="submit">Send </button>
             <div style={{ display: "flex", flexDirection: "row" }}><img src={phoneIco} alt='icon for phone number' width="40px" height="40px" /> <p style={{ margin: "5px" }}>+20 101 831 8954</p></div>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", maxWidth: '14rem' }}>
               <a target='blank' href='https://github.com/Saad-Hisham'><img src={githubIco} alt='github icon' width="50px" height="50px" /></a>

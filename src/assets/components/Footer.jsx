@@ -46,6 +46,7 @@ const Footer = () => {
             <img
                 src={image}
                 id="me"
+                alt='saad hesham'
                 onClick={() => {
                     setShowText(!showText);
                 }}
