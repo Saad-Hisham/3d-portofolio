@@ -227,7 +227,7 @@ section.works-section {
 }
 
 .border-left {
-    background: #b56576;
+    background: #5672a9;
     position: absolute;
     left: -1px;
     top: 0;
@@ -268,8 +268,8 @@ section.works-section {
 
 .about .content button {
     background: none;
-    border: 1px solid #b56576;
-    color: #b56576;
+    border: 1px solid #5672a9;
+    color: #5672a9;
     padding: 1em;
     margin: 0px 1rem;
     font-weight: bold;
@@ -281,7 +281,7 @@ section.works-section {
 }
 
 .buttons-container button:hover {
-    background-color: #b56576;
+    background-color: #5672a9;
     color: white;
     transition: all ease-in-out .5s;
 }
@@ -376,7 +376,7 @@ h4 {
 }
 
 .about h2 {
-    color: #b56576;
+    color: #5672a9;
 
 }
 
@@ -397,7 +397,7 @@ h4::after,
 }
 
 .about h2::after {
-    background: #b56576;
+    background: #5672a9;
 
 }
 
@@ -538,7 +538,7 @@ h5 {
 }
 
 .about .content button a {
-    color: #b56576;
+    color: #5672a9;
 }
 
 .about .content button:hover a {
