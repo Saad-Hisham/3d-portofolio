@@ -452,7 +452,7 @@ h4::before,
     position: absolute;
     top: -69px;
     left: 13px;
-    width: 58%;
+    width: 40%;
     height: 4rem;
     border: 2px solid;
 
@@ -462,9 +462,9 @@ h4::before,
     content: "";
     background: #264b7c;
     position: absolute;
-    top: 74px;
+    top: 86px;
     left: 0;
-    width: 58%;
+    width: 40%;
     height: 3rem;
 
 }
