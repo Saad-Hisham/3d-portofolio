@@ -444,7 +444,7 @@ h4::before,
     letter-spacing: 7px;
     transform: skewY(19deg);
     overflow: visible;
-    color: white;
+    color: #264b7c;
 }
 
 .skills-content h3::before {
@@ -460,7 +460,7 @@ h4::before,
 
 .skills-content h3::after {
     content: "";
-    background: white;
+    background: #264b7c;
     position: absolute;
     top: 74px;
     left: 0;
