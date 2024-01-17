@@ -144,7 +144,7 @@ const Works = () => {
                 <div className='details'>
                   <p>Designed a catchy "Coming Soon" section with React and Framer Motion. Added engaging animations for a visually appealing and interactive experience.</p>
                   <button>
-                    <a href='https://fully-animation-base-apparel-coming-soon-page.vercel.app' target='blank'>Visit the site</a>
+                    <a href='https://animated-section.vercel.app' target='blank'>Visit the site</a>
                   </button>
                 </div>
                 <img src={base} alt='Animated Base Apparel Coming Soon section' width='300' height='200' />
