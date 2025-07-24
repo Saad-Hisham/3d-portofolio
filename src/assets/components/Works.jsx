@@ -9,6 +9,7 @@ import Todo from "../images/todo.jpg"
 import world from "../images/world.jpg"
 import base from "../images/base.jpg"
 import generator from "../images/generator.jpg"
+<<<<<<< HEAD
 
 
 
@@ -18,6 +19,27 @@ const Works = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
+=======
+import gameImage from "../images/game.png"
+import gemuImage from "../images/gemu.png"
+
+
+const imageAssets = [rockImage, gameImage, Todo, gemuImage, base, generator];
+const videoAssets = [
+  '/Rocks.mp4', // for Rock Paper Scissors
+  '/liv.mp4',   // for Shinobi Clash
+  '/Todos.mp4', // for Todo
+  '/Gemy.mp4',  // for Gemy 3d Chatbot
+  '/Base-f.mp4',
+  '/generator-f.mp4'
+];
+
+const Works = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".works-trigger",
@@ -31,7 +53,10 @@ const Works = () => {
                         dispatch(adjustLight(2 - self.progress))
                         dispatch(changeVideo(0))
                     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
                 }
             }
         });
@@ -42,7 +67,10 @@ const Works = () => {
                 end: "center center",
                 scrub: true,
                 markers: false,
+<<<<<<< HEAD
 
+=======
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
             }
         });
         const tl3 = gsap.timeline({
@@ -52,10 +80,15 @@ const Works = () => {
                 end: "130% center",
                 scrub: true,
                 markers: false,
+<<<<<<< HEAD
 
             }
         });
 
+=======
+            }
+        });
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
         if (window.innerWidth >= window.innerHeight) {
             tl.to(".works-background", {
                 scale: 20 * (window.innerWidth / 1920),
@@ -73,7 +106,10 @@ const Works = () => {
                 width: "100vw",
                 height: "100vh"
             })
+<<<<<<< HEAD
 
+=======
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
         }
         tl2.to(".works-section", {
             borderTopRightRadius: 5
@@ -81,7 +117,12 @@ const Works = () => {
         tl3.to(".works-section", {
             borderBottomRightRadius: "45rem"
         })
+<<<<<<< HEAD
     }, [])
+=======
+    }, []);
+
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
     return (
         <section className='works-section-container'>
         <div className='works-trigger'></div>
@@ -103,6 +144,7 @@ const Works = () => {
                 <h5>Online Rock Paper Scissors game with animations</h5>
               </div>
       
+<<<<<<< HEAD
               <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(2)) }}>
                 <div className='details'>
                   <p>I implemented a multi-calculation feature, allowing users to perform various operations such as multiplication and addition in a single input line. Additionally, I incorporated auditory for user interactions, including clicks, theme changes, and error notifications. Furthermore, I introduced smooth animations for both theme transitions and error alerts to enhance the overall user experience.</p>
@@ -112,6 +154,21 @@ const Works = () => {
                 </div>
                 <img src={calcImage} alt='Calculator with sounds and theme switcher image' width='300' height='200' />
                 <h5> Calculator with sounds and theme switcher</h5>
+=======
+              {/* Shinobi Clash */}
+              <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(2)) }}>
+                <div className='details'>
+                  <p>Samurai Side-Scroller (2D Action Game)<br/>
+                  A fast-paced 2D side-scrolling game where you play as a skilled samurai navigating intense battles. The game features core combat mechanics including attack, defend, and heal, alongside powerful abilities like throwing shurikens and teleporting directly to enemies for surprise strikes.<br/>
+                  <b>Skills:</b> phaser
+                  </p>
+                  <button>
+                    <a href='https://shinobi-clash.vercel.app/' target='blank'>Visit the site</a>
+                  </button>
+                </div>
+                <img src={gameImage} alt='Shinobi Clash game image' width='300' height='200' />
+                <h5>Shinobi Clash (2d side scrolling game)</h5>
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
               </div>
       
               <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(3)) }}>
@@ -127,6 +184,7 @@ const Works = () => {
                 <h5>Drag & Drop Todo App with Dark Mode</h5>
               </div>
       
+<<<<<<< HEAD
               <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(4)) }}>
                 <div className='details'>
                   <p>
@@ -138,6 +196,20 @@ const Works = () => {
                 </div>
                 <img src={world} alt='COUNTRY EXPLORER WEBSITE UTILIZING APIS image' width='300' height='200' />
                 <h5>COUNTRY EXPLORER WEBSITE UTILIZING APIS</h5>
+=======
+              {/* Gemy 3d Chatbot */}
+              <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(4)) }}>
+                <div className='details'>
+                  <p>Built a 3D chatbot using React Three Fiber for interactive 3D models, Gemini API as a .<br/>
+                  <b>Skills:</b> HTML · Cascading Style Sheets (CSS) · React.js · rasa · REST APIs · Three.js
+                  </p>
+                  <button>
+                    <a href='https://gemy3.vercel.app/' target='blank'>Visit the site</a>
+                  </button>
+                </div>
+                <img src={gemuImage} alt='Gemy 3d Chatbot image' width='300' height='200' />
+                <h5>Gemy 3d Chatbot</h5>
+>>>>>>> d08dbe9 (Update works section: Add Shinobi Clash and Gemy 3d Chatbot projects)
               </div>
       
               <div className='work-block' onMouseEnter={() => { dispatch(changeVideo(5)) }}>
